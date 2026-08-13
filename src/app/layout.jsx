@@ -1,0 +1,34 @@
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+import Header from "@/component/Header";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata = {
+  title: "Service Hut",
+  description: "An app for providing different type of services",
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
+      <body className="min-h-full flex flex-col">
+        <Header></Header>
+        <main className="px-20 py-8">
+          {children}
+        </main>
+        </body>
+    </html>
+  );
+}
