@@ -9,7 +9,7 @@ const Banner = () => {
         const password= prompt("Enter you pass");
 
         if(password == "1234"){
-            router.push("/deshboard");
+            router.push("/dashboard");
         }
     }
     return (
