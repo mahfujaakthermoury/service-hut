@@ -1,11 +1,12 @@
+import Title from '@/component/Title';
 import React from 'react';
 
-const page = () => {
+const AddProvider = () => {
     return (
         <div>
-            
+            <Title>Add Provider Page</Title>
         </div>
     );
 };
 
-export default page;
+export default AddProvider;

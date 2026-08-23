@@ -5,6 +5,7 @@ const Register = () => {
     return (
         <div>
             <Title>Welcome to register page</Title>
+            
         </div>
     );
 };
